@@ -1,5 +1,5 @@
 # Dashboard App
-This is a responsive Dashboard Web Application built with React (Vite), TypeScript, and Material-UI. It features a fixed sidebar for widget selection, multiple widgets displaying simultaneously in a grid layout, and a dark/light theme toggle.
+This is a responsive Dashboard Web Application built with React (Vite), TypeScript, and Material-UI. It features a fixed sidebar for widget selection, widgets displaying simultaneously in a modal/popup layout, and a dark/light theme toggle.
 
 ## Features
 * Fixed Sidebar with gradient background and widget selection.
