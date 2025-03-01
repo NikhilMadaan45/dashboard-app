@@ -13,7 +13,7 @@ This is a responsive Dashboard Web Application built with React (Vite), TypeScri
 
 ### 1. Clone the repository
 
-```git clone <repository-url> ``` 
+```git clone https://github.com/NikhilMadaan45/dashboard-app ``` 
 ```cd dashboard-app```
 
 ### 2. Install dependencies
