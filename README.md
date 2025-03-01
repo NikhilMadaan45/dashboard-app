@@ -56,8 +56,3 @@ Styling: Material-UI (MUI), CSS overrides.
 * Stored in React Context.
 * Dynamically switches light/dark mode.
 * Updates background, text colors, and UI elements accordingly.
-
-### Grid Layout (Replaces Modal)
-* Material-UI Grid v2 is used instead of a modal.
-* Ensures multiple widgets appear in a structured layout.
-* Widgets have equal height and width for consistency.
