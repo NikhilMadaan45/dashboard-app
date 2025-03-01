@@ -1,55 +1,60 @@
-# React + TypeScript + Vite
+# Dashboard App
+This is a responsive Dashboard Web Application built with React (Vite), TypeScript, and Material-UI. It features a fixed sidebar for widget selection, multiple widgets displaying simultaneously in a grid layout, and a dark/light theme toggle.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features
+* Fixed Sidebar with gradient background and widget selection.
+* Widgets: User Info, Notifications, Data Table (paginated).
+* Multiple Widgets Active at Once.
+* Dark/Light Theme Toggle.
+* Data Fetching (mock API or local JSON).
+* Fully Responsive Design.
 
-Currently, two official plugins are available:
+## 🚀 Setup Instructions
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 1. Clone the repository
 
-## Expanding the ESLint configuration
+```git clone <repository-url> cd dashboard-app```
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 2. Install dependencies
+```yarn install  # or npm install ```
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### 3. Run the development server
+```yarn dev  # or npm run dev```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 4. Open the app in the browser
+```http://localhost:5173/```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🏗️ Implementation Overview
+### Tech Stack
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
-# dashboard-app
+Frontend: React (Vite), TypeScript, Material-UI.
+State Management: React Context API.
+Routing (Optional): React Router.
+Styling: Material-UI (MUI), CSS overrides.
+## Key Components
+
+### Navbar (Sidebar)
+* Contains widget selection buttons.
+* Active widgets are highlighted.
+* Includes a Theme Toggle Button at the bottom.
+### Widgets
+
+- User Info Widget
+* Displays user avatar, name, email, and bio.
+* Adapts text color based on the theme.
+- Notifications Widget
+* Lists recent notifications.
+* Ensures text is readable in both themes.
+- Data Table Widget
+* Fetches and displays data in a table format.
+* Supports pagination.
+
+### Theme Toggle
+* Stored in React Context.
+* Dynamically switches light/dark mode.
+* Updates background, text colors, and UI elements accordingly.
+
+### Grid Layout (Replaces Modal)
+* Material-UI Grid v2 is used instead of a modal.
+* Ensures multiple widgets appear in a structured layout.
+* Widgets have equal height and width for consistency.
