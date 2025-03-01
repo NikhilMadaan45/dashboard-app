@@ -42,9 +42,11 @@ Styling: Material-UI (MUI), CSS overrides.
 - User Info Widget
 * Displays user avatar, name, email, and bio.
 * Adapts text color based on the theme.
+
 - Notifications Widget
 * Lists recent notifications.
 * Ensures text is readable in both themes.
+
 - Data Table Widget
 * Fetches and displays data in a table format.
 * Supports pagination.
