@@ -39,15 +39,15 @@ Styling: Material-UI (MUI), CSS overrides.
 * Includes a Theme Toggle Button at the bottom.
 ### Widgets
 
-- User Info Widget
+1. User Info Widget
 * Displays user avatar, name, email, and bio.
 * Adapts text color based on the theme.
 
-- Notifications Widget
+2. Notifications Widget
 * Lists recent notifications.
 * Ensures text is readable in both themes.
 
-- Data Table Widget
+3. Data Table Widget
 * Fetches and displays data in a table format.
 * Supports pagination.
 
